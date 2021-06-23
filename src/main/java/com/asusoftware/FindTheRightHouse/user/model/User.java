@@ -46,10 +46,10 @@ public class User implements UserDetails {
     private UserRole userRole;
 
     @Column(name = "locked")
-    private Boolean locked;
+    private Boolean locked = false;
 
     @Column(name = "enabled")
-    private Boolean enabled;
+    private Boolean enabled = false;
 
     @OneToMany(mappedBy = "user")
     private List<Post> postList;
