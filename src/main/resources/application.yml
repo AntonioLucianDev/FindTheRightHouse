@@ -9,3 +9,16 @@ spring:
     generate-ddl: true
     hibernate:
     ddl-auto: update
+
+  mail:
+    host: smtp.gmail.com
+    port: 587
+    username: apartment.finder.app@gmail.com
+    password: parolanoua
+    protocol: smtp
+    tls: true
+    properties.mail.smtp:
+      auth: true
+      starttls.enable: true
+      ssl.trust: smtp.gmail.com
+
